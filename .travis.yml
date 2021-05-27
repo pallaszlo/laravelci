@@ -11,8 +11,13 @@ before_script:
 script:
   - phpunit
 
+branches:
+  only:
+    - master
+    - dev
+
 deploy:
   provider: heroku
   api_key:
-    secure: 9c20096d-f2c3-4338-9805-fd356ba7cfe1
+    secure: f494131d-59ce-4ebf-80c1-03794bdc76e9
   app: laravelci
