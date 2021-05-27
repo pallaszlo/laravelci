@@ -5,6 +5,7 @@ php:
 
 before_script:
     - composer update
+    - cp .env.example .env
     - php artisan key:generate
 
 script:
