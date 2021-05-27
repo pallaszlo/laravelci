@@ -18,8 +18,6 @@ branches:
 
 deploy:
   provider: heroku
-  skip_cleanup: true
-  keep-history: true
   edge: true
   api_key:
     secure: f494131d-59ce-4ebf-80c1-03794bdc76e9
