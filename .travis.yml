@@ -5,6 +5,7 @@ php:
 
 before_script:
     - composer update
+    - php artisan key:generate
 
 script:
   - phpunit
