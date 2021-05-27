@@ -10,3 +10,8 @@ before_script:
 
 script:
   - phpunit
+
+deploy:
+  provider: heroku
+  api_key:
+    secure: 9c20096d-f2c3-4338-9805-fd356ba7cfe1
