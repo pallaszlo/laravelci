@@ -6,6 +6,7 @@ php:
 before_script:
     - composer update
     - cp .env.example .env
+    - mysql -e 'CREATE DATABASE laravelci;'
     - php artisan key:generate
     - php artisan migrate
 
