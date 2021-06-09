@@ -3,6 +3,9 @@ language: php
 php:
   - 7.4
 
+services:
+  - mysql
+
 before_script:
     - composer update
     - cp .env.example .env
